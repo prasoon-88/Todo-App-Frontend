@@ -1,0 +1,204 @@
+*{
+    margin: 0;padding: 0;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+    background: rgb(0, 108, 135);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:0 30px;
+}
+.navbar > .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    padding-right: 20px;
+    font-weight:500;
+}
+.navbar > h1{
+    font-size: 30px;
+    color: white;
+    padding-top: 5px;
+}
+.listItem,#logout{
+    color: white;
+    font-size: 22px;
+    background: rgb(0, 108, 135);
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    transition: all ease 0.2s;
+    align-self: center;
+}
+#logout{
+    margin-top: 0 ;
+    border: none;
+    outline: none;
+}
+.home{
+    width: 100vw;
+    height: 100%;
+}
+.home > h1 , .home > h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(191, 190, 190);
+}
+.home > h2{
+    font-size: 20px;
+}
+.container{
+    text-align: center;
+    width: 250px;
+    margin: 10% auto;
+    box-shadow: 0 0 0.5vw 0.1vw rgb(211, 211, 211);
+    padding:30px 25px;
+    background: #fcfcfc;
+    display: grid;
+    place-content: center;
+    gap: 5px;
+    grid-template-rows: 1fr 2fr;
+}
+.container > div{
+    display: grid;
+    gap: 20px;
+}
+input{
+    width: 80%;
+    justify-self: center;
+    font-size: 16px;
+    padding: 5px 8px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0.2vw 0.1vw rgb(231, 231, 231);
+}
+button{
+    width: 130px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    justify-self: center;
+    margin-top: 20px;
+    border: 0.5px solid;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    border-radius: 5px;
+    align-self: center;
+}
+
+#logout:hover{
+    background: white;
+    color: black;
+}
+button:hover{
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.registerWithUs{
+    margin-top: 20px;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.565);
+    position: absolute;
+    display: grid;
+    place-content: center;
+    transition: all ease 0.5s;
+    user-select: none;
+}
+.loader > h2{
+    font-weight:400;
+    font-size: 35px;
+    color: rgb(229, 228, 228);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Profile{
+    display: grid;
+    place-content: center;
+    margin: 10% auto;
+    text-align: center;
+    gap: 20px;
+}
+.Profile > h5 ,h1,h3{
+    font-weight: 500;
+}
+
+.todoContainer{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.todoInputContainer{
+    background: rgba(181, 231, 251, 0.337);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 850px;
+    height: 250px;
+    margin-top: 2%;
+    grid-template-rows: 1fr 0.8fr 0.8fr 1fr;
+    padding: 20px 10px;
+    gap: 20px;
+}
+.todoList{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 850px;
+    margin-top: 20px;
+    gap: 20px;
+}
+.todo{
+    width: 800px;
+    background: rgba(222, 222, 222, 0.131);
+    box-shadow: 0 0 20px 0.2px rgba(166, 158, 158, 0.456);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 30px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+.todo > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-content: center;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    box-shadow: none;
+}
+.todoInputContainer > h2{
+    color: rgb(70, 53, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;       
+}
+
+.todoInputContainer > input{
+    width: 550px;
+}
+
+#deleteBtn{
+    transform: translateY(-10px);
+}
+::selection{
+    background: rgb(0, 108, 135);
+    color: white;
+}
+
+.listItem:hover{
+    background: white;
+    color: black;
+}
